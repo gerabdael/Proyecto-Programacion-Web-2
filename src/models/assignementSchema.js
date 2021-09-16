@@ -25,7 +25,7 @@ const assignmentSchema = new mongoose.Schema({
         required:true
     },
     photo:{
-        type: PictureInPictureWindow,
+        type: String,
         required:true
     }    
 });

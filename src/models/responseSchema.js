@@ -6,7 +6,7 @@ const ResponseSchema = new mongoose.Schema({
         maxlength:140
     },
     date:{
-        type: date,
+        type: String,
         required:true,
     }
 });

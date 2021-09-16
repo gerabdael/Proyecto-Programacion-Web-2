@@ -1,8 +1,21 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express'); 
 
-const category_controller= require('../controllers/categoryController');
+const router = express.Router(); 
 
-router.post('/category', category_controller.category_create);
+  
 
-module.exports= router;
+const points_controller= require('../controllers/pointsController'); 
+
+  
+
+router.post('/point', points_controller.points_create); 
+
+router.get('/point', points_controller.points_getbyidassignement); 
+
+router.put('/point/:id', points_controller.points_update); 
+
+router.delete('/point/:id', points_controller.points_delete); 
+
+  
+
+module.exports= router; 

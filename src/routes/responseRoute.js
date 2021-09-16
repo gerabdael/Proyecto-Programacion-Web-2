@@ -1,8 +1,17 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express'); 
 
-const category_controller= require('../controllers/categoryController');
+const router = express.Router(); 
 
-router.post('/category', category_controller.category_create);
+  
 
-module.exports= router;
+const response_controller= require('../controllers/responseController'); 
+
+  
+
+router.post('/response', response_controller.response_create); 
+
+router.get('/response/:id', response_controller.points_getbyidcomment); 
+
+  
+
+module.exports= router; 

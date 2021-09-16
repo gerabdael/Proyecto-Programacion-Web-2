@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 const HistorySchema = new mongoose.Schema({
     date:{
-        type: date,
+        type: String,
         required:true,
     }
 });

@@ -11,7 +11,7 @@ const LevelSchema = new mongoose.Schema({
         maxlength:500
     },
     photo:{
-        type: PictureInPictureWindow,
+        type: String,
         required:true
     },
     video:{

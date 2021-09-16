@@ -9,3 +9,15 @@ exports.category_create =(req,res)=>{
     .catch((err)=>console.log("oops!",err));
     res.send(newcategory);
 };
+exports.category_getbyid=async(req,res)=>{
+    const {id}= req.params;
+    const data = await category.findById(id)
+    res.send(data);
+};
+exports.category_update =async (req,res)=>{
+    const {id}= req.params;
+    const{body}= req;
+    const data = await category.findOneAndUpdate({_id: id}, body);
+    res.send(data);
+};
+

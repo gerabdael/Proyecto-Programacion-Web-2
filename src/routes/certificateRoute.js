@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const category_controller= require('../controllers/categoryController');
+const certificate_controller= require('../controllers/certificateController');
 
-router.post('/category', category_controller.category_create);
+router.post('/certificate', certificate_controller.certificate_create);
 
 module.exports= router;

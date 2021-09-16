@@ -9,3 +9,7 @@ exports.comment_create =(req,res)=>{
     .catch((err)=>console.log("oops!",err));
     res.send(newcomment);
 };
+exports.comment_get =async(req,res)=>{
+    const data = await comment.find();
+    res.send(data);
+};

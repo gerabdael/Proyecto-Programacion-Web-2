@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const category_controller= require('../controllers/categoryController');
+const document_controller= require('../controllers/documentController');
 
-router.post('/category', category_controller.category_create);
+router.post('/document', document_controller.document_create);
+router.get('/document/:id', document_controller.document_getbyid);
 
 module.exports= router;

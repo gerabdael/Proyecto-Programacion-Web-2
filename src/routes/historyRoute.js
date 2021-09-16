@@ -1,8 +1,17 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express'); 
 
-const category_controller= require('../controllers/categoryController');
+const router = express.Router(); 
 
-router.post('/category', category_controller.category_create);
+  
 
-module.exports= router;
+const history_controller= require('../controllers/historyController'); 
+
+  
+
+router.post('/history', history_controller.history_create); 
+
+router.get('/history/:id', history_controller.history_getbyiduser); 
+
+  
+
+module.exports= router; 

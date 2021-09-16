@@ -1,8 +1,19 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express'); 
 
-const category_controller= require('../controllers/categoryController');
+const router = express.Router(); 
 
-router.post('/category', category_controller.category_create);
+  
 
-module.exports= router;
+const message_controller= require('../controllers/messageController'); 
+
+  
+
+router.post('/message', message_controller.message_create); 
+
+router.get('/message:id', message_controller.message_getbyiduser); 
+
+router.get('/message:id', message_controller.message_getbysubject); 
+
+  
+
+module.exports= router; 

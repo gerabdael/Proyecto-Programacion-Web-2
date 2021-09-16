@@ -1,8 +1,17 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express'); 
 
-const category_controller= require('../controllers/categoryController');
+const router = express.Router(); 
 
-router.post('/category', category_controller.category_create);
+  
 
-module.exports= router;
+const level_controller= require('../controllers/levelsControler'); 
+
+  
+
+router.post('/level', level_controller.level_create); 
+
+router.get('/level:id', level_controller.level_getbyidassignement); 
+
+  
+
+module.exports= router; 
