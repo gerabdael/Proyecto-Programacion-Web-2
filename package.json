@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "build":"",
-    "start-build":"", 
+    "build": "",
+    "start-build": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "equipo LMAD",
