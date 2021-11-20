@@ -1,22 +1,16 @@
 const mongoose=require("mongoose");
 const LevelSchema = new mongoose.Schema({
     name:{
-        type: String,
-        required:true
+        type: String
     },
     description:{
-        type: String,
-        required:true,
-        minlength:200,
-        maxlength:500
+        type: String
     },
     photo:{
-        type: String,
-        required:true
+        type: String
     },
     video:{
-        type: String,
-        required:true
+        type: String
     }
 });
 

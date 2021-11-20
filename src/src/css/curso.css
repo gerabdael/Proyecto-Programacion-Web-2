@@ -1,0 +1,44 @@
+.imgCurso{
+    width: 700px;
+    height: 400px;
+}
+
+.parrafSize{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.imgStar{
+    width: 200px;
+    height: 100px;
+    float: right;
+
+}
+
+.imgCrearCurso{
+    width: 600px;
+    height: 400px;
+}
+
+.btnFinalizar{
+padding-right: 20px;
+
+}
+
+.fondoLista{
+    background-color:lightgrey;
+}
+
+.fondoChat{
+    background-color:white;
+}
+
+.fondoMensaje1{
+    background-color:lightblue;
+    text-align: right;
+    margin-left: 420px;
+}
+
+.fondoMensaje2{
+    background-color:lightgoldenrodyellow;
+}

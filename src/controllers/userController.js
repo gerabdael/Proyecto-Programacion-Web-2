@@ -1,26 +1,15 @@
 const User = require("../models/userSchema");
-const user = require("../models/userSchema");
 
-exports.user_create =(req,res)=>{
+exports.user_create =async (req,res)=>{
     const {body} =req;
-    if(req.body.username.length >0 && req.body.username.length <20){
-        if(req.body.password.length>0 && req.body.password.length>10){
 
         
-    let newuser = new user(body);
+    let newuser = new User(body);
 
-    newuser.save()
+    await newuser.save()
     .then((newDBObject)=> console.log("Success!",newDBObject))
     .catch((err)=>console.log("oops!",err));
     res.send(newuser);
-        }else{
-            console.log("Capacidad de password no permitida");
-        }
-    }
-    else
-    {
-        console.log("Capacidad de username no permitida");
-    }
 
 };
 

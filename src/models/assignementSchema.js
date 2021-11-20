@@ -4,16 +4,16 @@ const assignmentSchema = new mongoose.Schema({
         type: String,
         required:true
     },
-    shortDescription:{
+    shortdescription:{
         type: String,
         required:true,
-        minlength:100,
+        minlength:2,
         maxlength:250
     },
-    longDescription:{
+    longdescription:{
         type: String,
         required:true,
-        minlength:200,
+        minlength:2,
         maxlength:500
     },
     price:{
@@ -21,12 +21,10 @@ const assignmentSchema = new mongoose.Schema({
         required:true
     },
     category:{
-        type: String,
-        required:true
+        type: String
     },
     photo:{
-        type: String,
-        required:true
+        type: String
     }    
 });
 

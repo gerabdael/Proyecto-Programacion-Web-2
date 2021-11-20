@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyparser = require('body-parser');
+const cors = require('cors');
 require("./src/models/connection");
 
 const assignement_router = require('./src/routes/assignementsRoute');
@@ -14,7 +15,10 @@ const points_router = require('./src/routes/pointsRoute');
 const response_router = require('./src/routes/responseRoute');
 const user_router = require('./src/routes/userRoute');
 const app = express();
-const port= 3000;
+const port= 5000;
+
+app.use(cors());
+
 app.use(bodyparser.json());
 
 //rutas

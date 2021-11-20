@@ -1,0 +1,64 @@
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% 
+      
+       <img className="bg" src="https://scontent.fntr1-1.fna.fbcdn.net/v/t1.15752-9/247746276_1200340643805015_1847650706867872243_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGoL8QVCn6JNFUN6B-ZNl_DWKT_1mxhx4dYpP_WbGHHh-oapr15PwdPD-qX2csgHYA&_nc_ohc=FZ--rCnknzkAX_HVi8Z&_nc_ht=scontent.fntr1-1.fna&oh=8411ab26279f8f3d7afbc8aa2250b729&oe=6199FC97"/>
+      */
+    }
+  }
+
+  .titulo{
+      background-color:darkcyan;
+      color: white;
+  }
+
+  .imgCard{
+      padding-left: 5cm;
+  }
+
+  .parent {
+    position: relative;
+    text-align:center;
+  }
+  .image1 {
+    position: relative;
+    width: 550px;
+    height: auto;
+    top: -0px;
+    left: 0;
+  }
+
+  .fondoBlanco{
+    background-color:white;
+}
+
+.imgComentario{
+    width: 80px;
+    height: 80px;
+}
+
+.imgHorizontal{
+  width: 380px;
+  height: 250px;
+}
+
+.textoComentario{
+    margin-left: 25px;
+    text-align: left;
+}

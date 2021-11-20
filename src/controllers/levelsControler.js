@@ -1,6 +1,5 @@
 const level = require("../models/levelschema");
 
-const { assignement_create } = require("./assigmenetController"); 
 
   
 
@@ -10,16 +9,10 @@ exports.level_create =(req,res)=>{
 
     let newlevel = new level(body); 
 
-  
-
     newlevel.save() 
-
     .then((newDBObject)=> console.log("Success!",newDBObject)) 
-
     .catch((err)=>console.log("oops!",err)); 
-
     res.send(newlevel); 
-
 }; 
 
   
